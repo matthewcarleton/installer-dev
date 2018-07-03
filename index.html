@@ -1,15 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir='ltr'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="node_modules/@patternfly/patternfly-next/dist/patternfly.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/@patternfly/patternfly-next/patternfly-full.css" />
+    <link rel="stylesheet" href="/css/installer-styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>Welcome</title>
 </head>
 <body>
-    <div class="testing">
-        <h1 class="pf-c-title pf-m-xxxl">testing</h1>
+    <div class="instlr-l-page">
+        <header role="banner" class="instlr-l-page__header">
+            <div class="instlr-c-utilities">
+                <!-- <div class="pf-c-dropdown">
+                    <button id="dropdown-example-collapsed" class="pf-c-dropdown__toggle" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-globe"></i>English (USA) </button>
+                    <div class="pf-c-dropdown__menu" role="menu" aria-labelledby="dropdown-example-collapsed" hidden="hidden">
+                    <a class="pf-c-dropdown__menu-item" role="menuitem" href="#">Link</a>
+                    <button class="pf-c-dropdown__menu-item" role="menuitem">Action</button>
+                    <a class="pf-c-dropdown__menu-item pf-m-disabled" role="menuitem" aria-disabled="true" tabindex="-1" href="#">Disabled Link</a>
+                    <button class="pf-c-dropdown__menu-item pf-m-disabled" role="menuitem" disabled="disabled">Disabled Action</button>
+                    <div class="pf-c-dropdown__separator" role="separator"></div>
+                    <a class="pf-c-dropdown__menu-item" role="menuitem" href="#">Separated Link</a>
+                    </div>
+                </div> -->
+                <button class="pf-c-button pf-m-action">
+                    <i class="fas fa-question-circle"></i>
+                    </button>
+            </div><!-- utilities-->
+            <h1 class="pf-c-title pf-m-2xl">Welcome</h1>
+        </header>
+        <div class="instlr-l-page__sidebar">
+            <div class="instlr-c-branding pf-c-background-image"> 
+                <svg version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                     x="0px" y="0px" width="187.6px" height="27.5px" viewBox="0 0 187.6 27.5" style="enable-background:new 0 0 187.6 27.5;"
+                     xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#FFFFFF;}
+                </style>
+                        <path class="st0" d="M5.3,9.9L3.7,6.6H2.7v3.3H0V0.1h4.4c0.6,0,1.1,0.1,1.6,0.2c0.5,0.1,0.9,0.3,1.2,0.6c0.3,0.3,0.6,0.6,0.8,1
+                            c0.2,0.4,0.3,0.9,0.3,1.5C8.2,4,8,4.6,7.7,5.1C7.4,5.5,7,5.9,6.4,6.1l2,3.7H5.3z M5.2,2.6C5,2.4,4.7,2.3,4.3,2.3H2.7v2.1h1.6
+                            c0.4,0,0.8-0.1,1-0.3c0.2-0.2,0.3-0.5,0.3-0.8C5.5,3,5.4,2.8,5.2,2.6z"/>
+                        <path class="st0" d="M10.4,9.9V0.1h7.5v2.3h-4.8v1.3H16v2.2h-2.9v1.7H18v2.3H10.4z"/>
+                        <path class="st0" d="M28.3,7.2c-0.2,0.6-0.6,1.1-1,1.5s-1,0.7-1.7,0.8c-0.7,0.2-1.4,0.3-2.3,0.3h-3.2V0.1h3.4
+                            c0.8,0,1.5,0.1,2.1,0.2c0.6,0.2,1.2,0.4,1.6,0.8c0.4,0.4,0.8,0.9,1,1.5c0.2,0.6,0.4,1.4,0.4,2.3S28.5,6.6,28.3,7.2z M25.7,3.8
+                            c-0.1-0.3-0.2-0.6-0.4-0.8c-0.2-0.2-0.4-0.4-0.7-0.5c-0.3-0.1-0.6-0.1-1.1-0.1h-0.7v5.1h0.6c0.4,0,0.8,0,1.1-0.1
+                            c0.3-0.1,0.5-0.2,0.7-0.4c0.2-0.2,0.3-0.5,0.4-0.8c0.1-0.3,0.1-0.7,0.1-1.2C25.8,4.5,25.8,4.1,25.7,3.8z"/>
+                        <path class="st0" d="M41.5,9.9V6h-3v3.9h-2.8V0.1h2.8v3.6h3V0.1h2.8v9.8H41.5z"/>
+                        <path class="st0" d="M53,9.9l-0.5-1.7h-2.9L49,9.9h-2.9l3.5-9.8h2.7l3.5,9.8H53z M51.6,5.3c-0.1-0.3-0.2-0.6-0.2-0.8
+                            c-0.1-0.2-0.1-0.4-0.2-0.6c-0.1-0.2-0.1-0.4-0.1-0.5c0-0.2-0.1-0.3-0.1-0.5c0,0.2-0.1,0.3-0.1,0.5c0,0.2-0.1,0.3-0.1,0.5
+                            c-0.1,0.2-0.1,0.4-0.2,0.6c-0.1,0.2-0.1,0.5-0.2,0.8L50.2,6h1.6L51.6,5.3z"/>
+                        <path class="st0" d="M61.5,2.4v7.4h-2.7V2.4H56V0.1h8.2v2.4H61.5z"/>
+                        <path class="st0" d="M67.8,1.8c-0.1,0.2-0.2,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.5,0.1c-0.2,0-0.3,0-0.5-0.1
+                            c-0.2-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.2-0.1-0.3-0.1-0.5s0-0.3,0.1-0.5s0.2-0.3,0.3-0.4s0.2-0.2,0.4-0.3
+                            C66.3,0,66.5,0,66.7,0c0.2,0,0.3,0,0.5,0.1c0.2,0.1,0.3,0.2,0.4,0.3c0.1,0.1,0.2,0.2,0.3,0.4c0.1,0.2,0.1,0.3,0.1,0.5
+                            S67.9,1.6,67.8,1.8z M67.7,0.8c-0.1-0.1-0.1-0.2-0.2-0.3c-0.1-0.1-0.2-0.2-0.3-0.2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.2,0-0.3,0-0.4,0.1
+                            c-0.1,0.1-0.2,0.1-0.3,0.2c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.1-0.1,0.3-0.1,0.4c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.1,0.2,0.2,0.3
+                            c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0.1,0.3,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1c0.1-0.1,0.2-0.1,0.3-0.2c0.1-0.1,0.2-0.2,0.2-0.3
+                            c0.1-0.1,0.1-0.3,0.1-0.4C67.7,1.1,67.7,1,67.7,0.8z M67.2,1.2C67.1,1.3,67,1.3,67,1.4l0.3,0.6H67l-0.3-0.5h-0.3v0.5h-0.2V0.5h0.6
+                            c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.1,0.1s0.1,0.1,0.1,0.1c0,0.1,0,0.1,0,0.2C67.3,1.1,67.2,1.2,67.2,1.2z M67,0.8c0,0-0.1,0-0.2,0
+                            h-0.4v0.4h0.4c0.1,0,0.1,0,0.2,0C67,1.1,67,1,67,1C67,0.9,67,0.9,67,0.8z"/>
+                        <path class="st0" d="M0,27.3V12.6h8.9v1.5H1.6v4.6h4.2v1.5H1.6v5.6h7.5v1.5H0z"/>
+                        <path class="st0" d="M21.3,27.3l-6.4-10c-0.1-0.1-0.2-0.3-0.3-0.5c-0.1-0.2-0.2-0.3-0.3-0.5c-0.1-0.2-0.2-0.3-0.3-0.5
+                            c-0.1-0.2-0.2-0.3-0.2-0.4v1v10.9h-1.6V12.6h1.6l6.4,10.2c0.1,0.1,0.2,0.3,0.3,0.5c0.1,0.2,0.2,0.3,0.3,0.5
+                            c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.2,0.2,0.3,0.2,0.4v-1V12.6h1.6v14.7H21.3z"/>
+                        <path class="st0" d="M31.8,14.1v13.2h-1.6V14.1h-4.3v-1.5h10.3v1.5H31.8z"/>
+                        <path class="st0" d="M39.1,27.3V12.6h8.9v1.5h-7.2v4.6h4.2v1.5h-4.2v5.6h7.5v1.5H39.1z"/>
+                        <path class="st0" d="M60.8,19.6c-0.6,0.7-1.5,1.2-2.5,1.4l3.2,6.4h-1.9l-3.1-6.2H53v6.2h-1.6V12.6h5.8c0.6,0,1.2,0.1,1.8,0.3
+                            c0.6,0.2,1,0.4,1.4,0.8c0.4,0.3,0.7,0.8,1,1.3c0.2,0.5,0.4,1.1,0.4,1.8C61.7,17.9,61.4,18.9,60.8,19.6z M59.3,14.8
+                            c-0.5-0.5-1.3-0.7-2.2-0.7H53v5.5h3.9c1.1,0,1.9-0.2,2.4-0.7c0.5-0.5,0.8-1.1,0.8-2.1C60.1,15.9,59.8,15.3,59.3,14.8z"/>
+                        <path class="st0" d="M74.8,19c-0.2,0.6-0.6,1-1,1.4c-0.4,0.4-1,0.7-1.6,0.9c-0.6,0.2-1.3,0.3-2,0.3h-3.6v5.8H65V12.6h5.5
+                            c0.7,0,1.3,0.1,1.9,0.3c0.6,0.2,1.1,0.4,1.5,0.8c0.4,0.4,0.7,0.8,1,1.4c0.2,0.6,0.4,1.2,0.4,1.9C75.2,17.8,75,18.4,74.8,19z
+                             M72.7,14.9c-0.5-0.5-1.3-0.8-2.3-0.8h-3.8v5.9h3.6c2.2,0,3.3-1,3.3-3C73.5,16.1,73.2,15.4,72.7,14.9z"/>
+                        <path class="st0" d="M87.4,19.6c-0.6,0.7-1.5,1.2-2.5,1.4l3.2,6.4h-1.9l-3.1-6.2h-3.5v6.2h-1.6V12.6h5.8c0.6,0,1.2,0.1,1.8,0.3
+                            c0.6,0.2,1,0.4,1.4,0.8c0.4,0.3,0.7,0.8,1,1.3c0.2,0.5,0.4,1.1,0.4,1.8C88.3,17.9,88,18.9,87.4,19.6z M85.9,14.8
+                            c-0.5-0.5-1.3-0.7-2.2-0.7h-4.1v5.5h3.9c1.1,0,1.9-0.2,2.4-0.7c0.5-0.5,0.8-1.1,0.8-2.1C86.7,15.9,86.4,15.3,85.9,14.8z"/>
+                        <path class="st0" d="M91.7,27.3V12.6h1.6v14.7H91.7z"/>
+                        <path class="st0" d="M106,25.1c-0.2,0.5-0.5,0.9-1,1.3c-0.4,0.4-0.9,0.6-1.5,0.9c-0.6,0.2-1.3,0.3-2.1,0.3c-1,0-1.9-0.2-2.8-0.6
+                            c-0.8-0.4-1.6-0.9-2.1-1.5l1.1-1.2c0.6,0.5,1.2,1,1.8,1.3c0.6,0.3,1.3,0.5,2.1,0.5c1,0,1.8-0.2,2.3-0.7c0.6-0.4,0.8-1.1,0.8-1.8
+                            c0-0.3-0.1-0.6-0.2-0.9c-0.1-0.3-0.3-0.5-0.6-0.8c-0.3-0.2-0.6-0.5-1.1-0.7c-0.4-0.2-1-0.5-1.7-0.7c-0.8-0.3-1.5-0.6-2-0.8
+                            c-0.5-0.3-1-0.6-1.3-0.9c-0.3-0.3-0.6-0.7-0.7-1.1c-0.1-0.4-0.2-0.9-0.2-1.4c0-0.6,0.1-1.1,0.3-1.6c0.2-0.5,0.5-0.9,0.9-1.2
+                            c0.4-0.3,0.9-0.6,1.4-0.7c0.6-0.2,1.2-0.3,1.9-0.3c1,0,1.8,0.1,2.5,0.4c0.7,0.3,1.3,0.7,2,1.2l-1,1.3c-0.5-0.4-1.1-0.8-1.6-1
+                            c-0.5-0.2-1.2-0.3-1.9-0.3c-0.5,0-0.9,0.1-1.3,0.2c-0.4,0.1-0.7,0.3-0.9,0.5c-0.2,0.2-0.4,0.4-0.5,0.7c-0.1,0.3-0.2,0.5-0.2,0.8
+                            c0,0.3,0,0.6,0.1,0.8c0.1,0.2,0.3,0.5,0.5,0.7c0.3,0.2,0.6,0.5,1.1,0.7c0.5,0.2,1.1,0.5,1.8,0.7c0.8,0.3,1.5,0.6,2,0.9
+                            c0.5,0.3,1,0.6,1.3,1c0.3,0.3,0.6,0.7,0.7,1.2c0.1,0.4,0.2,0.9,0.2,1.4C106.3,24,106.2,24.6,106,25.1z"/>
+                        <path class="st0" d="M109.7,27.3V12.6h8.9v1.5h-7.2v4.6h4.2v1.5h-4.2v5.6h7.5v1.5H109.7z"/>
+                        <path class="st0" d="M127.4,27.3V12.6h1.6v13.2h7.3v1.5H127.4z"/>
+                        <path class="st0" d="M139.6,27.3V12.6h1.6v14.7H139.6z"/>
+                        <path class="st0" d="M154.2,27.3l-6.4-10c-0.1-0.1-0.2-0.3-0.3-0.5c-0.1-0.2-0.2-0.3-0.3-0.5c-0.1-0.2-0.2-0.3-0.3-0.5
+                            c-0.1-0.2-0.2-0.3-0.2-0.4v1v10.9h-1.6V12.6h1.6l6.4,10.2c0.1,0.1,0.2,0.3,0.3,0.5c0.1,0.2,0.2,0.3,0.3,0.5
+                            c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.2,0.2,0.3,0.2,0.4v-1V12.6h1.6v14.7H154.2z"/>
+                        <path class="st0" d="M168.8,26c-0.9,1.1-2.2,1.6-4,1.6c-1.8,0-3.1-0.5-4-1.6c-0.9-1-1.3-2.6-1.3-4.6v-8.7h1.6v8.7
+                            c0,3.2,1.3,4.7,3.8,4.7c1.3,0,2.2-0.4,2.7-1.2c0.5-0.8,0.8-1.9,0.8-3.5v-8.7h1.6v8.7C170.1,23.4,169.6,24.9,168.8,26z"/>
+                        <path class="st0" d="M181.8,27.3l-2.2-3.8c-0.3-0.5-0.5-0.9-0.7-1.3c-0.2-0.4-0.4-0.8-0.6-1.1c-0.2,0.4-0.4,0.8-0.6,1.2
+                            c-0.2,0.4-0.5,0.8-0.7,1.3l-2.3,3.8h-1.8l4.6-7.6l-4.2-7h1.8l1.9,3.2c0.3,0.5,0.5,0.9,0.7,1.3c0.2,0.4,0.4,0.8,0.6,1.2
+                            c0.2-0.4,0.4-0.7,0.6-1.1c0.2-0.4,0.5-0.8,0.7-1.3l1.9-3.2h1.8l-4.2,7l4.6,7.7H181.8z"/>
+                        <path class="st0" d="M187.5,14.4c-0.1,0.2-0.2,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.5,0.1
+                            c-0.2,0-0.3,0-0.5-0.1c-0.2-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.2-0.1-0.3-0.1-0.5s0-0.3,0.1-0.5
+                            c0.1-0.2,0.2-0.3,0.3-0.4c0.1-0.1,0.2-0.2,0.4-0.3c0.2-0.1,0.3-0.1,0.5-0.1c0.2,0,0.3,0,0.5,0.1c0.2,0.1,0.3,0.2,0.4,0.3
+                            c0.1,0.1,0.2,0.2,0.3,0.4c0.1,0.2,0.1,0.3,0.1,0.5S187.6,14.2,187.5,14.4z M187.3,13.5c-0.1-0.1-0.1-0.2-0.2-0.3s-0.2-0.2-0.3-0.2
+                            c-0.1-0.1-0.3-0.1-0.4-0.1c-0.2,0-0.3,0-0.4,0.1c-0.1,0.1-0.2,0.1-0.3,0.2s-0.2,0.2-0.2,0.3c-0.1,0.1-0.1,0.3-0.1,0.4
+                            c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0.1,0.3,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1
+                            c0.1-0.1,0.2-0.1,0.3-0.2c0.1-0.1,0.2-0.2,0.2-0.3c0.1-0.1,0.1-0.3,0.1-0.4C187.4,13.7,187.4,13.6,187.3,13.5z M186.8,13.8
+                            c-0.1,0.1-0.1,0.1-0.2,0.1l0.3,0.6h-0.3l-0.3-0.5h-0.3v0.5h-0.2v-1.4h0.6c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.1,0.1s0.1,0.1,0.1,0.1
+                            c0,0.1,0,0.1,0,0.2C186.9,13.7,186.9,13.8,186.8,13.8z M186.6,13.4c0,0-0.1,0-0.2,0h-0.4v0.4h0.4c0.1,0,0.1,0,0.2,0
+                            c0,0,0.1-0.1,0.1-0.1C186.7,13.5,186.7,13.5,186.6,13.4z"/>
+                    </svg>
+            </div>
+            <nav class="instlr-c-nav">
+                <ul>
+                    <li class="instlr-c-nav__item"><a href="">localization</a></li>
+                    <li class="instlr-c-nav__item"><a href="">software</a></li>
+                    <li class="instlr-c-nav__item"><a href="">system</a></li>
+                    <li class="instlr-c-nav__item"><a href="">summary</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main role="main" class="pf-l-page__main">
+            <div class="pf-l-grid pf-m-gutters">
+                <div class="pf-m-5-col">
+                        <div class="pf-c-content">
+                                <p>This interactive installation will guide you to make good decisions about the install configuration, while suggesting best practices and simplifying the process, and providing options for advanced configurations.</p>
+                                <p>No changes will be made to your system until you select “Begin Install” on the final Summary screen.</p>
+                            </div>
+                </div>
+                <div class="pf-m-4-col">
+                        <p>please select your installation language:</p>
+                        <ul class="instlr-c-language-selection">
+                            <li><a href="#">English, United States</a></li>
+                            <li><a href="#">Espanol, Estados Unidos</a></li>
+                            <li><a href="#">Afrikaans</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Eesti</a></li>
+                            <li><a href="#">Espanol</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                        </ul>
+                </div>
+            </div>            
+        </main>
+        <footer class="pf-l-page__footer">
+            <div class="notification">Nothing will be written to your drive until you begin your installation</div>
+            <button class="pf-c-button pf-m-tertiary">Quit</button>
+            <button class="pf-c-button pf-m-secondary pf-m-disabled">Back</button>
+            <button class="pf-c-button pf-m-primary pf-m-disabled">Next</button>
+        </footer>
     </div>
 </body>
 </html>

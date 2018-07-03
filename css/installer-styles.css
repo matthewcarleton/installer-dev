@@ -1,0 +1,16 @@
+.instlr-l-page {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 9fr;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas: "sidebar header" "sidebar main" "sidebar footer"; }
+  .instlr-l-page__header {
+    grid-area: header; }
+  .instlr-l-page__sidebar {
+    grid-area: sidebar;
+    background-color: #00659c; }
+  .instlr-l-page__main {
+    grid-area: main; }
+  .instlr-l-page__footer {
+    grid-area: footer; }

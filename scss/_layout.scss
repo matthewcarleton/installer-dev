@@ -1,0 +1,26 @@
+// overall layout
+
+.instlr-l-page {
+  display: grid;
+  height:100vh;
+  grid-template-columns: 3fr 9fr;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas: 
+  "sidebar header"
+  "sidebar main"
+  "sidebar footer";
+
+  &__header {
+    grid-area: header;
+  }
+  &__sidebar{
+    grid-area: sidebar;
+    background-color: #00659c;
+  }
+  &__main{
+    grid-area: main;
+  }
+  &__footer{
+    grid-area: footer;
+  }
+}

@@ -1,8 +1,12 @@
 {
   "name": "installer-dev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "RHEL installer prototype",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewcarleton/installer-dev"
+  },
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +19,6 @@
     "gulp-sass": "^4.0.1"
   },
   "dependencies": {
-    "@patternfly/patternfly-next": "^1.0.0-alpha.1"
+    "@patternfly/patternfly-next": "^1.0.5"
   }
 }
