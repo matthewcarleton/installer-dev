@@ -19,7 +19,6 @@
     "gulp-sass": "^4.0.1"
   },
   "dependencies": {
-    "@patternfly/patternfly-next": "^1.0.5",
-    "gatsby": "^1.9.273"
+    "@patternfly/patternfly-next": "^1.0.5"
   }
 }
